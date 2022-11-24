@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let localtime= new Date()
+        let uur = localtime.getHours()
+
+        document.write(`<p>Het is nu ${uur} uur.</p>`);
+        
+        if (uur > 0 && uur <= 7) {
+            document.write('<p>Goeienacht</p>');
+        } else if (uur > 7 && uur <= 11) {
+            document.write('<p>Goeiemorgen</p>');
+        } else if (uur > 11 && uur <= 18) {
+            document.write('<p>Goeiemiddag</p>');
+        } else if (uur > 18) {
+            document.write('<p>Goeie avond</p>');
+        }
+        
+    </script>
+</body>
+</html>
